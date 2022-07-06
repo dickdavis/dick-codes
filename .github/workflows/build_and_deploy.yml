@@ -25,7 +25,6 @@ jobs:
       with:
         bundler-cache: true
     - name: Set up node
-      uses: actions/setup-node@v3
       run: yarn install
     - name: "Build Site"
       run: bundle exec jekyll build
