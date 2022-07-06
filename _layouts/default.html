@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
   <body>
-    <h2 class="text-6xl font-bold text-center">{{ page.title }}</h2>
-    {{ content }}
+    <h2 class="text-6xl font-bold text-center my-4">{{ site.title }}</h2>
+    <div class="text-left sm:text-center mx-2 mb-6">
+      <p class="text-indigo-600 text-xl mb-2">Dick Davis</p>
+      <p class="mb-2">Full-stack Ruby on Rails engineer. Blogs about programming topics.</p>
+      <p class="mb-2">If you want to support my blogging or open-source work, you can <a href="https://github.com/sponsors/d3d1rty" target="_new" class="text-indigo-600 underline hover:text-indigo-800">sponsor me.</a></p>
+    </div>
+    <h2 class="text-4xl font-bold text-center mb-4">{{ page.title }}</h2>
+    <div class="block max-w-4xl mx-auto">
+      <hr class="border-indigo-600 border-2">
+      {{ content }}
+    </div>
   </body>
 </html>
