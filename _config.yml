@@ -1,6 +1,7 @@
 title: dick.codes
 domain: dick.codes
 url: https://dick.codes
+exclude: ['bin/', 'package.json', 'package-lock.json', 'postcss.config.js', 'tailwind.config.js']
 baseurl:
 excerpt_separator: <!--more-->
 plugins:
