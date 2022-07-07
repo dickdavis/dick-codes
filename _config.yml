@@ -2,7 +2,14 @@ title: dick.codes
 domain: dick.codes
 url: https://dick.codes
 baseurl:
+excerpt_separator: <!--more-->
 plugins:
   - jekyll-postcss
 postcss:
   cache: false
+kramdown:
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: table
+    bold_every: 100
+    css: class

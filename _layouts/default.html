@@ -6,8 +6,8 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
-    <h2 class="text-6xl font-bold text-center my-6">{{ site.title }}</h2>
+  <body class="bg-white dark:bg-slate-800 text-zinc-900 dark:text-zinc-100">
+    <h1 class="text-6xl font-bold text-center my-6">{{ site.title }}</h1>
     <div class="text-left max-w-xl px-2 mx-auto mb-6">
       <p class="text-indigo-600 dark:text-indigo-500 text-xl font-semibold mb-2">Dick Davis</p>
       <p class="mb-2">Full-stack Ruby on Rails engineer. Blogs about programming topics.</p>
@@ -19,9 +19,9 @@
         <p>Want to help? Consider <a href="https://github.com/sponsors/d3d1rty" target="_new" class="text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800">sponsoring me.</a></p>
       </div>
     </div>
-    <h2 class="text-4xl font-bold text-center mb-4">{{ page.title }}</h2>
-    <div class="block max-w-4xl mx-auto">
-      <hr class="border-indigo-600 dark:text-indigo-500 border-2">
+    <hr class="block max-w-4xl my-6 mx-auto border-indigo-600 dark:text-indigo-500 border-2">
+    <div class="block max-w-4xl mx-auto p-2">
+      <h2 class="text-4xl font-bold mb-4">{{ page.title }}</h2>
       {{ content }}
     </div>
   </body>
