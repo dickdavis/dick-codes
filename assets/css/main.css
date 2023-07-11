@@ -33,6 +33,10 @@ table.CodeRay {
   @apply block w-full bg-zinc-900 rounded-lg text-white overflow-x-scroll;
 }
 
+code {
+  @apply bg-zinc-900 text-zinc-300 rounded-md px-2 py-1;
+}
+
 table.CodeRay tbody {
 }
 
