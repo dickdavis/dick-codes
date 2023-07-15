@@ -34,7 +34,7 @@ table.CodeRay {
 }
 
 code {
-  @apply bg-zinc-900 text-zinc-300 rounded-md px-2 py-1;
+  @apply bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 rounded-md px-2 py-0;
 }
 
 table.CodeRay tbody {
