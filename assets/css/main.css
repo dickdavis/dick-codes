@@ -29,6 +29,14 @@ article.post div img.license__image {
   @apply border-0 block mx-auto;
 }
 
+article.post ul {
+  padding-left: 1em;
+}
+
+article.post ul li {
+  list-style: disc;
+}
+
 table.CodeRay {
   @apply block w-full bg-zinc-900 rounded-lg text-white overflow-x-scroll;
 }
