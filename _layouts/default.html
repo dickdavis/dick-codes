@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
+    {% webmentions_head %}
   </head>
 
 <body class="bg-white dark:bg-slate-800 text-zinc-900 dark:text-zinc-100">
@@ -35,6 +36,7 @@
   <div class="block max-w-4xl mx-auto p-2">
     <h2 class="text-4xl font-bold mb-4">{{ page.title }}</h2>
     {{ content }}
+    {% webmentions page.url %}
   </div>
 </body>
 
