@@ -8,9 +8,12 @@ layout: default
   <div class="text-lg my-4">
     {{ content }}
   </div>
-  {% webmentions_js %}
   <div class="text-center">
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" class="license__image" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
     <p class="license__statement">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
   </div>
+  <hr class="block max-w-4xl my-6 mx-auto border-indigo-600 dark:text-indigo-500 border-2">
+  <h2 class="text-4xl font-semibold text-center my-6">Webmentions</h2>
+  {% webmentions page.url %}
+  {% webmentions_js %}
 </article>
