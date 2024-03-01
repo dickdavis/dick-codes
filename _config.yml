@@ -5,7 +5,9 @@ exclude: ['bin/', 'package.json', 'package-lock.json', 'postcss.config.js', 'tai
 baseurl:
 excerpt_separator: <!--more-->
 plugins:
+  - jekyll-feed
   - jekyll-postcss
+  - jekyll-sitemap
 postcss:
   cache: false
 kramdown:
