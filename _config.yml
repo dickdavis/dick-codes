@@ -6,6 +6,7 @@ baseurl:
 excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
+  - jekyll/minibundle
   - jekyll-postcss
   - jekyll-sitemap
 postcss:
