@@ -17,8 +17,24 @@ article.post div p {
   @apply text-xl leading-relaxed my-8;
 }
 
+article.post div blockquote {
+  @apply border-l-4 border-indigo-600 pl-4;
+}
+
 article.post div blockquote p {
-  @apply italic rounded text-2xl leading-relaxed my-8;
+  @apply italic rounded leading-relaxed my-8;
+}
+
+article.post ul {
+  @apply pl-4;
+}
+
+article.post ul li {
+  @apply list-disc my-2;
+}
+
+article.post a {
+  @apply text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800;
 }
 
 article.post div p.license__statement {
@@ -27,14 +43,6 @@ article.post div p.license__statement {
 
 article.post div img.license__image {
   @apply border-0 block mx-auto;
-}
-
-article.post ul {
-  padding-left: 1em;
-}
-
-article.post ul li {
-  list-style: disc;
 }
 
 table.CodeRay {
