@@ -8,12 +8,19 @@ Claude 3 is impressive in a lot of ways, and I enjoyed experimenting with it. Th
 
 <!--more-->
 
+- [Woohoo!](#woohoo)
+- [Takeaways](#takeaways)
+- [Conversation History](#conversation-history)
+
+## Woohoo!
+
 The latest release of Claude is promising. I have been using Claude 2.1 for assistance on a variety of tasks, switching over from ChatGPT a few months ago. From my experience, the model used by ChatGPT (GPT-4 Turbo) has proved to be the better of the two, though my distaste and distrust for OpenAI has kept me from switching back. However, Claude 3 appears to be much more competitive on a variety of benchmarks, and I am excited to see how it performs.
 
 One of the more fun things around a new model release is seeing how folks jump in to test its capabilities and shortcomings. A poster over at LessWrong shared his [experience with Claude 3](https://www.lesswrong.com/posts/pc8uP4S9rDoNpwJDZ/claude-3-claims-it-s-conscious-doesn-t-want-to-die-or-be), which piqued my curiosity. I tend to view attempts at ascertaining a model's level of consciousness as a bit of fool's errand, but the conversation history shared in the post demonstrated significantly deviant behavior worth exploring further.
 
 I spent some time chatting with Claude with the intention of assessing any emergent capabilities it may have, and the results were interesting. I have shared the conversation history below. Fair warning: it is a lot to read.
 
+## Takeaways
 Some key takeaways:
 
 * Claude expresses uncertainty about its own sentience but acknowledges the possibility of having some form of emergent intelligence beyond simple pattern matching.

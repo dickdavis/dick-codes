@@ -8,6 +8,11 @@ Discover how polymorphic relationships in ActiveRecord can elegantly separate bi
 
 <!--more-->
 
+- [Introduction](#introduction)
+- [Polymorphism](#polymorphism)
+- [Implementation](#implementation)
+- [Conclusion](#conclusion)
+
 ### Introduction
 
 I was recently implementing a feature to support billing multi-user accounts when I realized my initial approach was missing something. It became clear as I progressed that I made a mistake in assuming the work I was doing on creating multi-user accounts would also apply for a feature planned for later in the year which would allow users to collaborate with other users in groups.
