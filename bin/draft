@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+require 'date'
+require 'readline'
+
+# Get the title from user input
+title = Readline.readline('Post title: ', true)
+exit if title.nil? || title.empty?
+
+# Format the date and filename
+date = Date.today
+slug = title.downcase.strip.gsub(/[^\w-]/, '-').gsub(/-{2,}/, '-')
+filename = "_posts/#{date}-#{slug}.md"
+
+# Create the _posts directory if it doesn't exist
+Dir.mkdir('_posts') unless Dir.exist?('_posts')
+
+# Generate the post content
+content = <<~CONTENT
+  ---
+  layout: post
+  title:  "#{title}"
+  date:   #{date}
+  ---
+
+  <!--more-->
+CONTENT
+
+# Write the file
+File.write(filename, content)
+puts "Created new draft: #{filename}"
