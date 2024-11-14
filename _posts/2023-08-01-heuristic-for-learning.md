@@ -4,6 +4,7 @@ title:  "A Useful Heuristic for Evaluating Learning"
 date:   2023-08-01 10:00:00 -0500
 ---
 
+A personal reflection on how I stopped caring about traditional metrics like grades and started prioritizing personal growth through challenging experiences.
 
 <!--more-->
 

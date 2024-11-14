@@ -4,6 +4,7 @@ title:  "Claude 3 Released"
 date:   2024-03-05 10:00:00 -0500
 ---
 
+Claude 3 is impressive in a lot of ways, and I enjoyed experimenting with it. The latest release has shown some interesting capabilities and tendencies, which I explore in this post.
 
 <!--more-->
 
