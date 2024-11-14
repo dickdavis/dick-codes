@@ -4,14 +4,24 @@ title:  "A Useful Heuristic for Evaluating Learning"
 date:   2023-08-01 10:00:00 -0500
 ---
 
+A personal reflection on how I stopped caring about traditional metrics like grades and started prioritizing personal growth through challenging experiences.
 
 <!--more-->
+
+- [Anticipation without anxiety](#anticipation-without-anxiety)
+- [Early challenges I faced](#early-challenges-i-faced)
+- [The hell of modern public schools](#the-hell-of-modern-public-schools)
+- [How I evaluate learning](#how-i-evaluate-learning)
+
+## Anticipation without anxiety
 
 I can breathe a sigh of well-deserved relief now that the summer term has finally ended. This August marks a full year of my participation in the Lipscomb MBA program, which I never would have imagined taking part in. I don’t plan to pursue a career in finance or anything—still an engineer, through and through—but I do hope to at least become conversant on fundamental business concepts with the expectation that doing so will make me more sensitive to the motivations and needs of stakeholders.
 
 The summer electives I took consisted of Leading Through Change and Financial Statement Analysis, the former being a heavy-on soft-skills leadership class focused on effectively implementing change in an organization and the latter being a down-in-the-weeds slog through calculating ratios and interpreting financial statements. The Leading Through Change class was engaging, but it left you scratching your head, wondering how exactly it constituted a graduate-level class. On the other hand, Financial Statement Analysis left no such doubts: it was the most challenging class I’ve ever taken.
 
 As I write this, I await my final grade for the class, which will likely be a high C or a low B. Most people would cringe at getting a C, but I embrace it. I put my best effort into learning a subject far outside of my area of expertise, and the amount of knowledge I have accumulated during the class far exceeds my expectations. If a C is what I get in return for that effort, so be it. I won’t be losing any sleep over it, that’s for sure.
+
+## Early challenges I faced
 
 I have never been a good student, but I have always been a good learner. That might seem like a nonsensical statement, but let me explain.
 
@@ -25,6 +35,8 @@ There were many upsides to being homeschooled. Having a flexible schedule allowe
 
 One of the most enduring positive memories of my youth was finishing up my schoolwork for the day and heading over to the library, where I would peruse the shelves for the most esoteric books to read. I would take my haul to Dairy Queen, order a strawberry cheese-quake blizzard, and just read. These days were the brightest in an otherwise dark time, a moment of respite away from the sickliness, anger, and seething resentment that haunted my house.
 
+## The hell of modern public schools
+
 My senior year was terrible. Returning to the rigid structure of public school and the insufferable tedium associated with kids my age was a nightmare. I did not do well. Academically, I did well, but I did not adjust socially. My behavioral problems resurfaced, though at least they weren’t violent. The place felt like a prison, so I left the first chance I got, dropping out in the final term because I simply could not do it anymore.
 
 There is a stark contrast between my public school and homeschool experiences. Yes, the environment was totally different and well-suited to my personality. Still, it goes deeper than that: when I was homeschooled, I was a **learner,** whereas in public school, I was merely a **student**.
@@ -34,6 +46,8 @@ The looser structure of a homeschool environment allowed me to pursue self-direc
 Contrast that with an environment where you have minimal input into your choice of subjects, classrooms full of disruptive students, lackluster curricula, uninspiring educators, and a prison-like environment where you are shuffled from one classroom to the next by the tolling of a bell.
 
 There is simply no comparison.
+
+## How I evaluate learning
 
 Being a student means being shackled to a letter grade as the metric by which you measure your progress in understanding the material.  Exams are how these measurements are taken, but in truth, they fail to account for the myriad of other ways knowledge is retained and applied as their requirement skews learning toward only that which is testable. And God help you if you fail one! You must not have learned anything at all!
 

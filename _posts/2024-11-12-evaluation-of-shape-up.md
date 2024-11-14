@@ -5,7 +5,19 @@ date:   2024-11-12 01:00:00 -0500
 ---
 
 I read the book *Shape Up* by Ryan Singer, taking extensive notes about the methodology and assessing its viability for adoption by product teams.
+
 <!--more-->
+
+- [Bottom-line up front](#bottom-line-up-front)
+  - [Pros](#pros)
+  - [Cons](#cons)
+- [Shaping](#shaping)
+  - [Set boundaries](#1-set-boundaries)
+  - [Rough out the elements](#2-rough-out-the-elements)
+  - [Address risks and rabbit holes](#3-address-risks-and-rabbit-holes)
+  - [Write the pitch](#4-write-the-pitch)
+- [Betting](#betting)
+- [Building](#building)
 
 ## Bottom-line up front
 
@@ -41,20 +53,11 @@ The high-level planning process for refining, evaluating, and derisking new proj
 
 ### 1. Set boundaries
 
-**Appetite**
+**Appetite**: How much the organization wants to spend on a given problem. Two sizes: 6 weeks for big batch projects and 2 weeks for small batch projects.
 
-- How much the organization wants to spend on a given problem.
-- Two sizes: 6 weeks for big batch projects and 2 weeks for small batch projects.
+**Fixed-time, variable scope**: Set contraints around how long projects should take according to the appetite, and then adjust scope accordingly. If a project is expected to take longer than 6 weeks, decompose into multiple projects.
 
-**Fixed-time, variable scope**
-
-- Set contraints around how long projects should take according to the appetite, and then adjust scope accordingly.
-- If a project is expected to take longer than 6 weeks, decompose into multiple projects.
-
-**Narrow problem definition**
-
-- Ensure the problem is understood well.
-- Size the problem so as to maximize the value added for the time spent.
+**Narrow problem definition**: Ensure the problem is understood well. Size the problem so as to maximize the value added for the time spent.
 
 ### 2. Rough out the elements
 
@@ -83,27 +86,15 @@ The high-level planning process for refining, evaluating, and derisking new proj
 
 The purpose of the pitch is to present a good potential bet. It is essentially a presentation; it can be in document or slide format. It consists of a problem, appetite, solution, rabbit holes, and no-gos.
 
-**Problem**
+**Problem**: The problem definition should consist of a single specific story illustrating why the status quo does not work.
 
-- The problem definition should consist of a single specific story illustrating why the status quo does not work.
+**Appetite**: Include the appetite in the pitch to avoid unproductive conversations and oversolutioning.
 
-**Appetite**
+**Solution**: Presents the solution to the problem as constrained by the appetite. Includes visualizations to help make it more concrete. Includes appropriate level of detail, leaving space for teams to refine and implement.
 
-- Include the appetite in the pitch to avoid unproductive conversations and oversolutioning.
+**Rabbit holes**: Explicitly callout potential considerations that are not central to the problem but need to be accounted for to deliver the project.
 
-**Solution**
-
-- Presents the solution to the problem as constrained by the appetite.
-- Includes visualizations to help make it more concrete.
-- Includes appropriate level of detail, leaving space for teams to refine and implement.
-
-**Rabbit holes**
-
-- Explicitly callout potential considerations that are not central to the problem but need to be accounted for to deliver the project.
-
-**No-gos**
-
-- Explicitly callout anything that is out of scope for the project.
+**No-gos**: Explicitly callout anything that is out of scope for the project.
 
 ## Betting
 
