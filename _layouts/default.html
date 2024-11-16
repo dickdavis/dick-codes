@@ -77,7 +77,9 @@
       </nav>
     {% endif %}
     <div class="block p-2">
-      <h2 class="text-4xl font-bold mb-4">{{ page.title }}</h2>
+      {% unless page.url == '/about' %}
+        <h2 class="text-4xl font-bold mb-4">{{ page.title }}</h2>
+      {% endunless %}
       {{ content }}
     </div>
   </body>
