@@ -11,16 +11,16 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     {% webmentions_head %}
   </head>
-  <body class="bg-white dark:bg-slate-800 text-zinc-900 dark:text-zinc-100 px-1">
+  <body class="bg-white dark:bg-slate-800 text-zinc-900 dark:text-zinc-100 max-w-4xl mx-auto px-1">
     <h1 class="text-6xl font-bold text-center my-6"><a href="/">{{ site.title }}</a></h1>
-    <div class="text-left max-w-4xl px-2 mx-auto mb-6">
+    <div class="text-left px-2 mx-auto mb-6">
       <p class="text-indigo-600 dark:text-indigo-500 text-4xl font-semibold mb-2">Dick Davis</p>
       <p class="text-lg">Passionate about building products that meaningfully benefit humanity.</p>
       {% unless page.url == '/about' %}
         <p class="text-lg mb-4"><a href="{% link about.html %}" class="text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800">Read more</a><p>
       {% endunless %}
       <div class="my-4">
-        <p class="max-w-xl text-xl font-semibold mb-4">Connect with me</p>
+        <p class="text-xl font-semibold mb-4">Connect with me</p>
         <ul class="text-lg flex flex-col md:flex-row md:flex-wrap md:gap-4">
           <li class="mb-2 flex items-center">
             <div class="w-10 text-center">
@@ -67,8 +67,16 @@
         </ul>
       </div>
     </div>
-    <hr class="block max-w-4xl my-8 mx-auto border-indigo-600 dark:text-indigo-500 border-2">
-    <div class="block max-w-4xl mx-auto p-2">
+    <hr class="block my-8 mx-auto border-indigo-600 dark:text-indigo-500 border-2">
+    {% if page.url != '/' %}
+      <nav class="text-left text-lg mb-4 px-2">
+        <a href="/" class="text-indigo-600 dark:text-indigo-500 hover:text-indigo-800 flex items-center gap-2">
+          <i class="fa-solid fa-chevron-left text-sm"></i>
+          <span>Back</span>
+        </a>
+      </nav>
+    {% endif %}
+    <div class="block p-2">
       <h2 class="text-4xl font-bold mb-4">{{ page.title }}</h2>
       {{ content }}
     </div>
