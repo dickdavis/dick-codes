@@ -17,7 +17,7 @@
       <p class="text-indigo-600 dark:text-indigo-500 text-4xl font-semibold mb-2">Dick Davis</p>
       <p class="text-lg">Passionate about building products that meaningfully benefit humanity.</p>
       {% unless page.url == '/about' %}
-        <p class="text-lg mb-4"><a href="{% link about.html %}" class="text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800">Read more</a><p>
+        <p class="text-lg mb-4"><a href="{{ '/about' | relative_url  }}" class="text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800">Read more</a><p>
       {% endunless %}
       <div class="my-4">
         <p class="text-xl font-semibold mb-4">Connect with me</p>
