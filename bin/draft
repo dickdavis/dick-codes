@@ -7,8 +7,21 @@ require 'readline'
 title = Readline.readline('Post title: ', true)
 exit if title.nil? || title.empty?
 
+# Get optional date input
+date_input = Readline.readline('Date (yyyy-mm-dd, leave empty for today): ', true)
+
 # Format the date and filename
-date = Date.today
+date = if !date_input.nil? && !date_input.empty?
+  begin
+    Date.parse(date_input)
+  rescue Date::Error
+    puts "Invalid date format. Using today's date."
+    Date.today
+  end
+else
+  Date.today
+end
+
 slug = title.downcase.strip.gsub(/[^\w-]/, '-').gsub(/-{2,}/, '-')
 filename = "_posts/#{date}-#{slug}.md"
 
