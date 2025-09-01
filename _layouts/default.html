@@ -13,7 +13,11 @@
   </head>
   <body class="bg-white dark:bg-slate-800 text-zinc-900 dark:text-zinc-100 max-w-3xl mx-auto px-1">
     <nav class="flex flex-row-reverse justify-between text-lg p-4 mb-4">
-      <a href="{{ '/about.html' | relative_url  }}" class="text-indigo-600 dark:text-indigo-500 hover:text-indigo-800 underline">About</a>
+      {% unless page.url == '/about' %}
+        <a href="{{ '/about.html' | relative_url  }}" class="text-indigo-600 dark:text-indigo-500 hover:text-indigo-800 underline">About</a>
+      {% else %}
+        <div class="block"></div>
+      {% endunless %}
       {% if page.url != '/' %}
         <a href="/" class="text-indigo-600 dark:text-indigo-500 hover:text-indigo-800 flex items-center gap-2">
           <i class="fa-solid fa-chevron-left text-sm"></i>
