@@ -12,7 +12,7 @@ permalink: /about
     <p class="text-indigo-600 dark:text-indigo-500 text-4xl font-semibold my-2">Dick Davis</p>
     <p class="text-lg text-center italic">Passionate about building products that meaningfully benefit humanity.</p>
     <div class="my-4">
-      <ul class="text-lg flex flex-col md:flex-row md:flex-wrap md:gap-4">
+      <ul class="text-lg grid grid-cols-2 gap-2 sm:flex sm:flex-row sm:flex-wrap sm:gap-4">
         <li class="mb-2 flex items-center">
           <div class="w-10 text-center">
             <i class="fa-brands fa-github"></i>
@@ -61,49 +61,30 @@ permalink: /about
   <section>
     <h2 class="text-2xl font-semibold mb-4">Background</h2>
     <p class="text-lg mb-4">I am a software engineer who enjoys working on challenging and ambitious projects that create shared value for businesses, customers, and the public. I am proficient in various technologies, with expertise in modern web apps built using Ruby on Rails and JavaScript. My experience includes work across both front-end and back-end disciplines, and my strengths include system design, performance improvement, and product strategy.</p>
-    <p class="text-lg mb-4">My professional experience started with military service in the Army infantry, including multiple combat deployments to Afghanistan. From there, I transitioned to system analysis for a large Department of Defense contractor. After seeking a formal computer science education and teaching myself web development, I began my career as a software engineer in 2019. Since then, I have worked on challenging, high-impact projects across both the public and private sectors. I thrive on building products that customers love.</p>
     <p class="text-lg mb-4">I enjoy spending time with my family, reading, gardening, and tinkering with various side projects. My most prized possessions include my large (and growing) anti-library, which contains high-quality nonfiction books spanning multiple domains and classic science fiction books. If I'm not reading a book or building something cool, I might be watching MLB, UFC, LaLiga, or F1.</p>
   </section>
   <section>
     <h2 class="text-2xl font-semibold mb-4">Skills & Expertise</h2>
-    <h3 class="text-xl font-semibold mb-4">Technical</h3>
     <ul class="text-lg list-disc list-inside space-y-2 mb-6">
       <li>
-        <span class="font-semibold">Frontend:</span> JavaScript, Hotwire (Turbo and Stimulus), TailwindCSS
+        <span class="font-semibold">Frontend:</span> JavaScript, Hotwire (Turbo/Stimulus), TailwindCSS, Svelte
       </li>
       <li>
-        <span class="font-semibold">Backend:</span> Ruby on Rails, PostgreSQL, Redis, Sidekiq
+        <span class="font-semibold">Backend:</span> Ruby on Rails, Serverless (Node & Go), PostgreSQL, Redis
       </li>
       <li>
-        <span class="font-semibold">Infrastructure:</span> AWS, Terraform, Kubernetes, Docker, Prometheus, Grafana
-      </li>
-    </ul>
-    <h3 class="text-xl font-semibold mb-4">Other</h3>
-    <ul class="text-lg list-disc list-inside space-y-2">
-      <li>
-        <span class="font-semibold">Product Management:</span> Roadmap Planning, User Research, Market Analysis
-      </li>
-      <li>
-        <span class="font-semibold">Entrepreneurship:</span> Business Development, Strategic Planning, MVP Development
-      </li>
-      <li>
-        <span class="font-semibold">Business Administration:</span> MBA-level expertise in Finance, Operations, and Marketing
+        <span class="font-semibold">Infrastructure:</span> AWS, Terraform, Kubernetes, Docker
       </li>
     </ul>
   </section>
   <section>
-    <h2 class="text-2xl font-semibold mb-4">Education</h2>
-    <ul class="text-lg space-y-4">
+    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+    <ul class="text-lg list-inside space-y-2 mb-6">
       <li>
-        <div class="font-semibold">Master of Business Administration (MBA)</div>
-        <div class="text-gray-600 dark:text-gray-400">Lipscomb University</div>
-        <div class="text-gray-600 dark:text-gray-400">Class of 2024</div>
+        <a class="font-semibold text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800" href="https://kutima.com">Kutima.com</a> - a coaching tool for helping clients achieve progress faster. Built as a monolithic Ruby on Rails app with Hotwire.
       </li>
       <li>
-        <div class="font-semibold">BS, Computer Science and Information Systems</div>
-        <div>Minor in Mobile Software Technology</div>
-        <div class="text-gray-600 dark:text-gray-400">Austin Peay State University</div>
-        <div class="text-gray-600 dark:text-gray-400">Class of 2022</div>
+        <a class="font-semibold text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800" href="https://mezuri.me">Mezuri.me</a> - a survey that assesses a programmer based on six core dimensions and assigns them an archetype. Built with SvelteKit using the Bun.js runtime.
       </li>
     </ul>
   </section>
