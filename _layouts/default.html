@@ -14,7 +14,7 @@
     <nav class="flex flex-row-reverse justify-between text-lg p-4 mb-4">
       <div class="flex items-center gap-4">
         {% unless page.url == '/about' %}
-          <a href="{{ '/about.html' | relative_url  }}" class="text-indigo-600 dark:text-indigo-500 hover:text-indigo-800 underline">About</a>
+          <a href="{{ '/about' | relative_url  }}" class="text-indigo-600 dark:text-indigo-500 hover:text-indigo-800 underline">About</a>
         {% endunless %}
         <a href="{{ '/feed.xml' | relative_url }}" class="text-indigo-600 dark:text-indigo-500 hover:text-indigo-800" title="RSS Feed">
           <i class="fa-solid fa-square-rss text-xl"></i>
