@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 article.post div h2 {
-  @apply text-4xl font-bold my-8;
+  @apply text-4xl font-bold my-8 text-indigo-600 dark:text-indigo-500;
 }
 
 article.post div h3 {
