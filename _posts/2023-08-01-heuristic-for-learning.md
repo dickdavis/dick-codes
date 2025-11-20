@@ -8,10 +8,10 @@ A personal reflection on how I stopped caring about traditional metrics like gra
 
 <!--more-->
 
-- [Anticipation without anxiety](#anticipation-without-anxiety)
-- [Early challenges I faced](#early-challenges-i-faced)
-- [The hell of modern public schools](#the-hell-of-modern-public-schools)
-- [How I evaluate learning](#how-i-evaluate-learning)
+{: .toc-container}
+
+* TOC
+{:toc}
 
 ## Anticipation without anxiety
 

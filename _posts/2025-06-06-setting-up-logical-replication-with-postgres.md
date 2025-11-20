@@ -8,10 +8,10 @@ Getting data out of your Postgres database and into a different data store, like
 
 <!--more-->
 
-- [Overview of replication](#overview-of-replication)
-- [Setting up a publication](#setting-up-a-publication)
-- [Creating a replication user](#creating-a-replication-user)
-- [Wrapping things up](#wrapping-things-up)
+{: .toc-container}
+
+* TOC
+{:toc}
 
 ## Overview of replication
 

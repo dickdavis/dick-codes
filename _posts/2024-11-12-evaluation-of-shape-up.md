@@ -8,16 +8,10 @@ I read the book *Shape Up* by Ryan Singer, taking extensive notes about the meth
 
 <!--more-->
 
-- [Bottom-line up front](#bottom-line-up-front)
-  - [Pros](#pros)
-  - [Cons](#cons)
-- [Shaping](#shaping)
-  - [Set boundaries](#1-set-boundaries)
-  - [Rough out the elements](#2-rough-out-the-elements)
-  - [Address risks and rabbit holes](#3-address-risks-and-rabbit-holes)
-  - [Write the pitch](#4-write-the-pitch)
-- [Betting](#betting)
-- [Building](#building)
+{: .toc-container}
+
+* TOC
+{:toc}
 
 ## Bottom-line up front
 

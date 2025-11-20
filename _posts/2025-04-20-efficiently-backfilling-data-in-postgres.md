@@ -7,9 +7,10 @@ While a rake task or background job works fine for most data imports, they becom
 
 <!--more-->
 
-- [Saving query results to CSV](#saving-query-results-to-csv)
-- [Importing the CSV file](#importing-the-csv-file)
-- [Diagnosing slow imports](#diagnosing-slow-imports)
+{: .toc-container}
+
+* TOC
+{:toc}
 
 *Note: the snippets in this guide use placeholder tags (`<PLACEHOLDER>`) that you should replace as necessary.*
 
