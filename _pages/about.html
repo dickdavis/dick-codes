@@ -4,102 +4,98 @@ title: About me
 permalink: /about
 ---
 
-<div class="space-y-8 mb-6">
-  <div class="flex flex-col items-center text-left px-2 mx-auto mb-6">
-    <img src="/assets/images/headshot.jpeg"
-         alt="Dick Davis headshot"
-         class="rounded-full w-48 h-48 object-cover border-4 border-indigo-500">
-    <p class="text-indigo-500 text-4xl font-semibold my-2">Dick Davis</p>
-    <p class="text-lg text-center italic">Passionate about building products that meaningfully benefit humanity.</p>
-    <div class="my-4">
-      <ul class="text-lg flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
-        <li class="mb-2 flex items-center">
-          <div class="w-10 text-center">
-            <i class="fa-brands fa-github"></i>
-          </div>
-          <a rel="me"
-             href="https://github.com/dickdavis"
-             target="_blank"
-             class="text-indigo-500 underline hover:text-indigo-800">
-            Github
-          </a>
-        </li>
-        <li class="mb-2 flex items-center">
-          <div class="w-10 text-center">
-            <i class="fa-solid fa-link-simple"></i>
-          </div>
-          <a href="https://lobste.rs/~dickdavis"
-             target="_blank"
-             class="text-indigo-500 underline hover:text-indigo-800">
-            Lobste.rs
-          </a>
-        </li>
-        <li class="mb-2 flex items-center">
-          <div class="w-10 text-center">
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-          <a href="https://linkedin.com/in/rvdavis"
-             target="_blank"
-             class="text-indigo-500 underline hover:text-indigo-800">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <section>
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600 dark:text-indigo-500">Background</h2>
-    <p class="text-lg mb-4">I am a software engineer who enjoys working on challenging and ambitious projects that create shared value for businesses, customers, and the public. I am proficient in various technologies, with expertise in modern web apps built using Ruby on Rails and JavaScript. My experience includes work across both front-end and back-end disciplines, and my strengths include system design, performance improvement, and product strategy.</p>
-    <p class="text-lg mb-4">I enjoy spending time with my family, reading, gardening, and tinkering with various side projects. My most prized possessions include my large (and growing) anti-library, which contains high-quality nonfiction books spanning multiple domains and classic science fiction books. If I'm not reading a book or building something cool, I might be watching MLB (Atlanta Braves), MLS (Nashville SC), La Liga (FC Barcelona), Formula 1 (Haas/Ferrari) or UFC.</p>
-  </section>
-  <section>
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600 dark:text-indigo-500">Skills & Expertise</h2>
-    <ul class="text-lg list-disc list-inside space-y-2 mb-6">
-      <li>
-        <span class="font-semibold">Frontend:</span> JavaScript, Hotwire (Turbo/Stimulus), Svelte, TailwindCSS
-      </li>
-      <li>
-        <span class="font-semibold">Backend:</span> Ruby on Rails, Elixir, Serverless (Node & Go), PostgreSQL, Redis
-      </li>
-      <li>
-        <span class="font-semibold">Infrastructure:</span> AWS, Terraform, Kubernetes, Docker
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600 dark:text-indigo-500">Projects</h2>
-    <ul class="text-lg list-inside space-y-2 mb-6">
-      <li>
-        <a class="font-semibold text-indigo-500 underline hover:text-indigo-800" href="https://kutima.com">Kutima.com</a> - a coaching tool for helping clients achieve progress faster. Built as a monolithic Ruby on Rails app with Hotwire.
-      </li>
-      <li>
-        <a class="font-semibold text-indigo-500 underline hover:text-indigo-800" href="https://mezuri.me">Mezuri.me</a> - a survey that assesses a programmer based on six core dimensions and assigns them an archetype. Built with SvelteKit using the Bun.js runtime.
-      </li>
-      <li>
-        <a class="font-semibold text-indigo-500 underline hover:text-indigo-800" href="https://timer.dick.codes">Timer.dick.codes</a> - a minimalistic pomodoro timer web app with sound and notifications. Built with SvelteKit and installable as a PWA.
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600 dark:text-indigo-500">Contact</h2>
-    <p class="text-lg mb-4">
-      You can reach me at <span class="font-semibold">webmaster [at] dick [dot] codes</span>. All emails are cryptographically signed to verify authenticity.
-    </p>
-    <p class="text-lg mb-2">
-      <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/74BBB0EA78AAD895D6812450BE02AC97C6291BF6"
+<section class="about-header">
+  <img src="/assets/images/headshot.jpeg"
+       alt="Dick Davis headshot"
+       class="about-header__headshot">
+  <p class="about-header__name">Dick Davis</p>
+  <p class="about-header__tagline">Passionate about building products that meaningfully benefit humanity.</p>
+  <ul class="about-header__links-container">
+    <li class="about-header__link-item">
+      <div class="about-header__link-icon-wrapper">
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <a rel="me"
+         href="https://github.com/dickdavis"
          target="_blank"
-         class="text-indigo-500 underline hover:text-indigo-800">
-        Download Public Key
+         class="about-header__link">
+        Github
       </a>
-    </p>
-    <small class="font-mono text-sm break-all block">
+    </li>
+    <li class="about-header__link-item">
+      <div class="about-header__link-icon-wrapper">
+        <i class="fa-solid fa-link-simple"></i>
+      </div>
+      <a href="https://lobste.rs/~dickdavis"
+         target="_blank"
+         class="about-header__link">
+        Lobste.rs
+      </a>
+    </li>
+    <li class="about-header__link-item">
+      <div class="about-header__link-icon-wrapper">
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <a href="https://linkedin.com/in/rvdavis"
+         target="_blank"
+         class="about-header__link">
+        LinkedIn
+      </a>
+    </li>
+  </ul>
+</div>
+<section class="page-content">
+  <h2 class="page-content__heading">Background</h2>
+  <p class="page-content__text">I am a software engineer who enjoys working on challenging and ambitious projects that create shared value for businesses, customers, and the public. I am proficient in various technologies, with expertise in modern web apps built using Ruby on Rails and JavaScript. My experience includes work across both front-end and back-end disciplines, and my strengths include system design, performance improvement, and product strategy.</p>
+  <p class="page-content__text">I enjoy spending time with my family, reading, gardening, and tinkering with various side projects. My most prized possessions include my large (and growing) anti-library, which contains high-quality nonfiction books spanning multiple domains and classic science fiction books. If I'm not reading a book or building something cool, I might be watching MLB (Atlanta Braves), MLS (Nashville SC), La Liga (FC Barcelona), Formula 1 (Haas/Ferrari) or UFC.</p>
+</section>
+<section class="page-content">
+  <h2 class="page-content__heading">Skills & Expertise</h2>
+  <ul class="page-content__list">
+    <li>
+      <b>Frontend:</b> JavaScript, Hotwire (Turbo/Stimulus), Svelte, TailwindCSS
+    </li>
+    <li>
+      <b>Backend:</b> Ruby on Rails, Elixir, Serverless (Node & Go), PostgreSQL, Redis
+    </li>
+    <li>
+      <b>Infrastructure:</b> AWS, Terraform, Kubernetes, Docker
+    </li>
+  </ul>
+</section>
+<section class="page-content">
+  <h2 class="page-content__heading">Projects</h2>
+  <ul class="page-content__list_undecorated">
+    <li>
+      <b><a class="page-content__link" href="https://kutima.com">Kutima.com</a></b> - a coaching tool for helping clients achieve progress faster. Built as a monolithic Ruby on Rails app with Hotwire.
+    </li>
+    <li>
+      <b><a class="page-content__link" href="https://mezuri.me">Mezuri.me</a></b> - a survey that assesses a programmer based on six core dimensions and assigns them an archetype. Built with SvelteKit using the Bun.js runtime.
+    </li>
+    <li>
+      <b><a class="page-content__link" href="https://timer.dick.codes">Timer.dick.codes</a></b> - a minimalistic pomodoro timer web app with sound and notifications. Built with SvelteKit and installable as a PWA.
+    </li>
+  </ul>
+</section>
+<section class="page-content">
+  <h2 class="page-content__heading">Contact</h2>
+  <p class="page-content__text">You can reach me at:</p>
+  <blockquote class="page-content__quote">webmaster [at] dick [dot] codes</blockquote>
+  <p class="page-content__text">All emails are cryptographically signed to verify authenticity.</p>
+  <p class="page-content__text">
+    <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/74BBB0EA78AAD895D6812450BE02AC97C6291BF6"
+       target="_blank"
+       class="page-content__link">
+      Download Public Key
+    </a>
+    <small class="about-page__key-fingerprint">
       Fingerprint: 74BB B0EA 78AA D895 D681 2450 BE02 AC97 C629 1BF6
     </small>
-  </section>
-  <section>
-    <small class="text-slate-200 text-xs italic">
-      If you find yourself in the strange position of trying to buy me a gift (you really don't need to, but thanks), save yourself some trouble and check out my
-      <a class="font-semibold text-indigo-500 underline hover:text-indigo-800" href="/wishlist">wishlist</a>.
-    </small>
-  </section>
-</div>
+  </p>
+</section>
+<section class="page-content about-page__wishlist-section">
+  <small class="page-content__ps">
+    If you find yourself in the strange position of trying to buy me a gift (you really don't need to, but thanks), save yourself some trouble and check out my
+    <b><a class="page-content__link" href="/wishlist">wishlist</a></b>.
+  </small>
+</section>

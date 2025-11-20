@@ -5,52 +5,222 @@
 @tailwind components;
 @tailwind utilities;
 
-article.post section h2 {
-  @apply text-3xl font-bold mt-8 mb-4 text-indigo-600 dark:text-indigo-500;
+/* default layout styles */
+
+body {
+  @apply bg-slate-900 text-slate-100 max-w-3xl mx-auto px-1;
 }
 
-article.post section h3 {
-  @apply text-2xl font-bold mt-8 mb-4 text-indigo-600 dark:text-indigo-500;
+nav.navigation {
+  @apply flex flex-row-reverse justify-between text-lg p-4 mb-4;
 }
 
-article.post section p {
+div.navigation__section_right {
+  @apply flex items-center gap-4;
+}
+
+a.navigation__page-link {
+  @apply text-indigo-500 hover:text-indigo-800 underline;
+}
+
+a.navigation__rss-link {
+  @apply text-orange-500 text-xl;
+}
+
+a.navigation__back-link {
+  @apply text-indigo-500 hover:text-indigo-800 flex items-center gap-2;
+
+  & i {
+    @apply text-sm;
+  }
+
+  & span {
+    @apply underline;
+  }
+}
+
+span.blog-title {
+  @apply block text-6xl font-bold text-center mt-4 mb-12;
+}
+
+div.blog-content-wrapper {
+  @apply block pt-2 pb-6;
+}
+
+/* index.html styles */
+article.article-preview {
+  @apply space-y-2 my-10;
+}
+
+h3.article-preview__title {
+  @apply text-2xl font-bold;
+
+  & a {
+    @apply text-indigo-500 underline hover:text-indigo-800;
+  }
+}
+
+time.article-preview__publication-time {
+  @apply text-slate-500;
+}
+
+p.article-preview__excerpt {
+  @apply text-xl font-semibold leading-loose;
+}
+
+/* generic styles for use in pages */
+section.page-content {
+  @apply space-y-6;
+}
+
+h2.page-content__heading {
+  @apply text-3xl font-bold text-indigo-500 mt-8;
+}
+
+p.page-content__text {
+  @apply text-lg leading-loose;
+}
+
+ul.page-content__list {
+  @apply text-lg leading-loose list-disc list-inside space-y-2;
+}
+
+ul.page-content__list_undecorated {
+  @apply text-lg leading-loose list-inside space-y-2;
+}
+
+a.page-content__link {
+  @apply text-indigo-500 hover:text-indigo-800 underline;
+}
+
+blockquote.page-content__quote {
+  @apply italic text-xl leading-loose bg-slate-800 border-l-4 border-indigo-600 p-4;
+}
+
+small.page-content__ps {
+  @apply text-slate-200 text-xs italic;
+}
+
+/* about.html styles */
+section.about-header {
+  @apply flex flex-col items-center text-left px-2 mx-auto;
+}
+
+img.about-header__headshot {
+  @apply rounded-full w-48 h-48 object-cover border-4 border-indigo-500;
+}
+
+p.about-header__name {
+  @apply text-indigo-500 text-4xl font-semibold my-2;
+}
+
+p.about-header__tagline {
+  @apply text-lg text-center italic;
+}
+
+ul.about-header__links-container {
+  @apply text-lg flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4 my-4;
+}
+
+li.about-header__link-item {
+  @apply mb-2 flex items-center;
+}
+
+div.about-header__link-icon-wrapper {
+  @apply w-10 text-center;
+}
+
+a.about-header__link {
+  @apply text-indigo-500 underline hover:text-indigo-800;
+}
+
+small.about-page__key-fingerprint {
+  @apply block font-mono text-sm break-all;
+}
+
+section.about-page__wishlist-section {
+  @apply my-6;
+}
+
+/* styles for posts */
+
+article.post {
+}
+
+span.post__publication-date {
+  @apply block text-slate-500 mb-4;
+}
+
+h1.post__title {
+  @apply text-4xl font-bold mb-4 text-indigo-500;
+}
+
+article.post section.post__content h2 {
+  @apply text-3xl font-bold text-indigo-500 mt-8 mb-4;
+}
+
+article.post section.post__content h3 {
+  @apply text-2xl font-bold text-indigo-500 mt-8 mb-4;
+}
+
+article.post section.post__content p {
   @apply text-lg leading-loose mb-6;
 }
 
-article.post section blockquote {
-  @apply border-l-4 border-indigo-600 pl-4;
+article.post section.post__content blockquote {
+  @apply italic text-xl leading-loose bg-slate-800 border-l-4 border-indigo-600 p-4 mb-6;
 }
 
-article.post section blockquote p {
-  @apply italic rounded leading-loose my-8;
-}
-
-article.post section ul {
+article.post section.post__content ul {
   @apply pl-4 leading-loose;
 }
 
-article.post section ul:not(ul ul) {
+article.post section.post__content ul:not(ul ul) {
   @apply mb-6;
 }
 
-article.post section ul li {
+article.post section.post__content ul li {
   @apply list-disc my-2;
 }
 
-article.post section a {
+article.post section.post__content a {
   @apply text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800;
 }
 
-article.post section .toc-container {
+article.post section.post__content .toc-container {
   @apply border rounded border-indigo-600 bg-indigo-200 dark:bg-slate-800 ;
 }
 
-article.post section .toc-container {
+article.post section.post__content .toc-container {
   @apply p-4;
 }
 
-article.post section .toc-container li {
+article.post section.post__content .toc-container li {
   @apply list-none;
+}
+
+article.post section.post__license {
+  @apply text-center mt-10 mb-6;
+
+  & img {
+    @apply border-0 block mx-auto;
+  }
+
+  & p {
+    @apply text-sm text-center leading-tight my-4;
+
+    & a {
+      @apply text-indigo-500 hover:text-indigo-800 underline;
+    }
+  }
+}
+
+footer.post__footer {
+  @apply border rounded border-indigo-600 bg-slate-800 text-center p-2 my-4 max-w-xl mx-auto text-lg;
+
+  & a {
+    @apply text-indigo-500 underline hover:text-indigo-800;
+  }
 }
 
 table.CodeRay {
