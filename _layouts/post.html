@@ -2,23 +2,18 @@
 layout: default
 ---
 <article class="post">
-  <span class="block text-slate-500 mb-4">
+  <span class="post__publication-date">
     <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %e, %Y" }}</time>
   </span>
-  <h1 class="text-4xl font-bold mb-4 text-indigo-500">{{ page.title }}</h1>
-  <section id="content" class="text-lg my-4">
+  <h1 class="post__title">{{ page.title }}</h1>
+  <section id="content" class="post__content">
     {{ content }}
   </section>
-  <section id="license" class="text-center mt-10 mb-6">
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" class="border-0 block mx-auto" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-    <p class="text-sm text-center leading-tight my-4">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+  <section id="license" class="post__license">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
   </section>
 </article>
-<footer class="border rounded border-indigo-600 bg-slate-800 text-center p-2 my-4 max-w-xl mx-auto text-lg">
-  Like what you've read? Consider
-  <a href="https://github.com/sponsors/dickdavis"
-     target="_new"
-     class="text-indigo-500 underline hover:text-indigo-800">
-    sponsoring me.
-  </a>
+<footer class="post__footer">
+  Like what you've read? Consider <a href="https://github.com/sponsors/dickdavis" target="_new">sponsoring me.</a>
 </footer>

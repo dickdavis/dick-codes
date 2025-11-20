@@ -10,25 +10,25 @@
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
   </head>
-  <body class="bg-slate-900 text-slate-100 max-w-3xl mx-auto px-1">
-    <nav class="flex flex-row-reverse justify-between text-lg p-4 mb-4">
-      <div class="flex items-center gap-4">
+  <body>
+    <nav class="navigation">
+      <div class="navigation__section_right">
         {% unless page.url == '/about' %}
-          <a href="{{ '/about' | relative_url  }}" class="text-indigo-500 hover:text-indigo-800 underline">About</a>
+          <a href="{{ '/about' | relative_url  }}" class="navigation__page-link">About</a>
         {% endunless %}
-        <a href="{{ '/feed.xml' | relative_url }}" class="text-orange-500" title="RSS Feed">
-          <i class="fa-solid fa-rss text-xl"></i>
+        <a href="{{ '/feed.xml' | relative_url }}" class="navigation__rss-link" title="RSS Feed">
+          <i class="fa-solid fa-rss"></i>
         </a>
       </div>
       {% if page.url != '/' %}
-        <a href="/" class="text-indigo-500 hover:text-indigo-800 flex items-center gap-2">
-          <i class="fa-solid fa-chevron-left text-sm"></i>
-          <span class="underline">Back</span>
+        <a href="/" class="navigation__back-link">
+          <i class="fa-solid fa-chevron-left"></i>
+          <span>Back</span>
         </a>
       {% endif %}
     </nav>
-    <span class="block text-6xl font-bold text-center mt-4 mb-12"><a href="/">{{ site.title }}</a></span>
-    <div class="block pt-2 pb-6">
+    <span class="blog-title"><a href="/">{{ site.title }}</a></span>
+    <div class="blog-content-wrapper">
       {{ content }}
     </div>
   </body>
