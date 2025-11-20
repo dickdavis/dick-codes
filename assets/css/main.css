@@ -5,52 +5,60 @@
 @tailwind components;
 @tailwind utilities;
 
-article.post div h2 {
-  @apply text-4xl font-bold my-8 text-indigo-600 dark:text-indigo-500;
+article.post section h2 {
+  @apply text-3xl font-bold mt-8 mb-4 text-indigo-600 dark:text-indigo-500;
 }
 
-article.post div h3 {
-  @apply text-3xl font-bold my-8;
+article.post section h3 {
+  @apply text-2xl font-bold mt-8 mb-4 text-indigo-600 dark:text-indigo-500;
 }
 
-article.post div p {
-  @apply text-xl leading-relaxed my-8;
+article.post section p {
+  @apply text-lg leading-loose mb-6;
 }
 
-article.post div blockquote {
+article.post section blockquote {
   @apply border-l-4 border-indigo-600 pl-4;
 }
 
-article.post div blockquote p {
-  @apply italic rounded leading-relaxed my-8;
+article.post section blockquote p {
+  @apply italic rounded leading-loose my-8;
 }
 
-article.post ul {
-  @apply pl-4;
+article.post section ul {
+  @apply pl-4 leading-loose;
 }
 
-article.post ul li {
+article.post section ul:not(ul ul) {
+  @apply mb-6;
+}
+
+article.post section ul li {
   @apply list-disc my-2;
 }
 
-article.post a {
+article.post section a {
   @apply text-indigo-600 dark:text-indigo-500 underline hover:text-indigo-800;
 }
 
-article.post div p.license__statement {
-  @apply text-sm text-center leading-tight my-4;
+article.post section .toc-container {
+  @apply border rounded border-indigo-600 bg-indigo-200 dark:bg-slate-800 ;
 }
 
-article.post div img.license__image {
-  @apply border-0 block mx-auto;
+article.post section .toc-container {
+  @apply p-4;
+}
+
+article.post section .toc-container li {
+  @apply list-none;
 }
 
 table.CodeRay {
-  @apply block w-full bg-zinc-900 rounded-lg text-white overflow-x-scroll;
+  @apply block w-full bg-slate-800 rounded-lg text-white overflow-x-scroll mb-6;
 }
 
 code {
-  @apply bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 rounded-md px-2 py-0;
+  @apply bg-slate-800 text-slate-200 rounded-md px-2 py-0;
 }
 
 table.CodeRay tbody {
@@ -70,10 +78,11 @@ table.CodeRay td {
 }
 
 .CodeRay .line-numbers, .CodeRay .no {
-  @apply bg-zinc-200 text-zinc-500 text-right px-2 py-4 w-8;
+  @apply bg-slate-800 text-slate-500 text-right px-2 py-4 w-8;
 }
 
 .CodeRay .line-numbers a {
+  @apply text-slate-400 hover:text-slate-600;
 }
 
 .CodeRay .line-numbers tt { font-weight: bold }
@@ -88,92 +97,98 @@ ol.CodeRay li { white-space: pre }
 .CodeRay .code pre { overflow: auto }
 .CodeRay .debug { color:white ! important; background:blue ! important; }
 
-.CodeRay .annotation { color:#007 }
-.CodeRay .attribute-name { color:#f08 }
-.CodeRay .attribute-value { color:#700 }
-.CodeRay .binary { color:#509; font-weight:bold }
-.CodeRay .comment  { color:#998; font-style: italic;}
-.CodeRay .char { color:#04D }
-.CodeRay .char .content { color:#04D }
-.CodeRay .char .delimiter { color:#039 }
-.CodeRay .class { color:#458; font-weight:bold }
-.CodeRay .complex { color:#A08; font-weight:bold }
-.CodeRay .constant { color:teal; }
-.CodeRay .color { color:#0A0 }
-.CodeRay .class-variable { color:#369 }
-.CodeRay .decorator { color:#B0B; }
-.CodeRay .definition { color:#099; font-weight:bold }
-.CodeRay .directive { color:#088; font-weight:bold }
-.CodeRay .delimiter { @apply text-gray-500; }
-.CodeRay .doc { color:#970 }
-.CodeRay .doctype { color:#34b }
-.CodeRay .doc-string { color:#D42; font-weight:bold }
-.CodeRay .escape  { color:#666; font-weight:bold }
-.CodeRay .entity { color:#800; font-weight:bold }
-.CodeRay .error { color:#F00; background-color:#FAA }
-.CodeRay .exception { color:#C00; font-weight:bold }
-.CodeRay .filename { color:#099; }
-.CodeRay .function { color:#900; font-weight:bold }
-.CodeRay .global-variable { color:teal; font-weight:bold }
-.CodeRay .hex { color:#058; font-weight:bold }
-.CodeRay .integer  { color:#099; }
-.CodeRay .include { color:#B44; font-weight:bold }
-.CodeRay .inline { @apply text-gray-500; }
-.CodeRay .inline .inline { background: #ccc }
-.CodeRay .inline .inline .inline { background: #bbb }
-.CodeRay .inline .inline-delimiter { color: #D14; }
-.CodeRay .inline-delimiter { color: #D14; }
-.CodeRay .important { color:#f00; }
-.CodeRay .interpreted { color:#B2B; font-weight:bold }
-.CodeRay .instance-variable { color:teal }
-.CodeRay .label { color:#970; font-weight:bold }
-.CodeRay .local-variable { color:#963 }
-.CodeRay .octal { color:#40E; font-weight:bold }
-.CodeRay .operator { }
-.CodeRay .predefined-constant {  font-weight:bold }
-.CodeRay .predefined { color:#369; font-weight:bold }
-.CodeRay .preprocessor { color:#579; }
-.CodeRay .pseudo-class { color:#00C; font-weight:bold }
-.CodeRay .predefined-type { color:#074; font-weight:bold }
-.CodeRay .reserved, .keyword  { @apply text-gray-500 font-bold; }
+/* Dracula Theme Color Palette:
+   Background: #282a36, Foreground: #f8f8f2
+   Comment: #6272a4, Cyan: #8be9fd, Green: #50fa7b
+   Orange: #ffb86c, Pink: #ff79c6, Purple: #bd93f9
+   Red: #ff5555, Yellow: #f1fa8c */
 
-.CodeRay .key { color: #808; }
-.CodeRay .key .delimiter { color: #606; }
-.CodeRay .key .char { color: #80f; }
-.CodeRay .value { color: #088; }
+.CodeRay .annotation { color:#f1fa8c }
+.CodeRay .attribute-name { color:#50fa7b }
+.CodeRay .attribute-value { color:#f1fa8c }
+.CodeRay .binary { color:#bd93f9; font-weight:bold }
+.CodeRay .comment  { color:#6272a4; font-style: italic;}
+.CodeRay .char { color:#f1fa8c }
+.CodeRay .char .content { color:#f1fa8c }
+.CodeRay .char .delimiter { color:#f1fa8c }
+.CodeRay .class { color:#8be9fd; font-weight:bold }
+.CodeRay .complex { color:#bd93f9; font-weight:bold }
+.CodeRay .constant { color:#bd93f9; }
+.CodeRay .color { color:#50fa7b }
+.CodeRay .class-variable { color:#8be9fd }
+.CodeRay .decorator { color:#50fa7b; }
+.CodeRay .definition { color:#50fa7b; font-weight:bold }
+.CodeRay .directive { color:#ff79c6; font-weight:bold }
+.CodeRay .delimiter { color:#f8f8f2; }
+.CodeRay .doc { color:#f1fa8c }
+.CodeRay .doctype { color:#ff79c6 }
+.CodeRay .doc-string { color:#f1fa8c; font-weight:bold }
+.CodeRay .escape  { color:#ff79c6; font-weight:bold }
+.CodeRay .entity { color:#50fa7b; font-weight:bold }
+.CodeRay .error { color:#ff5555; background-color:#44475a }
+.CodeRay .exception { color:#ff5555; font-weight:bold }
+.CodeRay .filename { color:#f1fa8c; }
+.CodeRay .function { color:#50fa7b; font-weight:bold }
+.CodeRay .global-variable { color:#bd93f9; font-weight:bold }
+.CodeRay .hex { color:#bd93f9; font-weight:bold }
+.CodeRay .integer  { color:#bd93f9; }
+.CodeRay .include { color:#ff79c6; font-weight:bold }
+.CodeRay .inline { color:#f8f8f2; }
+.CodeRay .inline .inline { background: #44475a }
+.CodeRay .inline .inline .inline { background: #44475a }
+.CodeRay .inline .inline-delimiter { color: #f1fa8c; }
+.CodeRay .inline-delimiter { color: #f1fa8c; }
+.CodeRay .important { color:#ff5555; }
+.CodeRay .interpreted { color:#50fa7b; font-weight:bold }
+.CodeRay .instance-variable { color:#bd93f9 }
+.CodeRay .label { color:#8be9fd; font-weight:bold }
+.CodeRay .local-variable { color:#ffb86c }
+.CodeRay .octal { color:#bd93f9; font-weight:bold }
+.CodeRay .operator { color:#ff79c6; }
+.CodeRay .predefined-constant { color:#bd93f9; font-weight:bold }
+.CodeRay .predefined { color:#8be9fd; font-weight:bold }
+.CodeRay .preprocessor { color:#ff79c6; }
+.CodeRay .pseudo-class { color:#50fa7b; font-weight:bold }
+.CodeRay .predefined-type { color:#8be9fd; font-weight:bold }
+.CodeRay .reserved, .keyword  { color:#ff79c6; font-weight:bold; }
 
-.CodeRay .regexp { background-color:#fff0ff }
-.CodeRay .regexp .content { color:#808 }
-.CodeRay .regexp .delimiter { color:#404 }
-.CodeRay .regexp .modifier { color:#C2C }
-.CodeRay .regexp .function  { color:#404; font-weight: bold }
+.CodeRay .key { color: #ff79c6; }
+.CodeRay .key .delimiter { color: #f8f8f2; }
+.CodeRay .key .char { color: #f1fa8c; }
+.CodeRay .value { color: #f1fa8c; }
 
-.CodeRay .string { color: #D20; }
+.CodeRay .regexp { background-color:#44475a }
+.CodeRay .regexp .content { color:#f1fa8c }
+.CodeRay .regexp .delimiter { color:#ff79c6 }
+.CodeRay .regexp .modifier { color:#ff79c6 }
+.CodeRay .regexp .function  { color:#50fa7b; font-weight: bold }
+
+.CodeRay .string { color: #f1fa8c; }
 .CodeRay .string .string { }
-.CodeRay .string .string .string { background-color:#ffd0d0 }
-.CodeRay .string .content { color: #D14; }
-.CodeRay .string .char { color: #D14; }
-.CodeRay .string .delimiter { color: #D14; }
+.CodeRay .string .string .string { background-color:#44475a }
+.CodeRay .string .content { color: #f1fa8c; }
+.CodeRay .string .char { color: #f1fa8c; }
+.CodeRay .string .delimiter { color: #f1fa8c; }
 
-.CodeRay .shell { color:#D14 }
+.CodeRay .shell { color:#f1fa8c }
 .CodeRay .shell .content { }
-.CodeRay .shell .delimiter { color:#D14 }
+.CodeRay .shell .delimiter { color:#f1fa8c }
 
-.CodeRay .symbol { color:#990073 }
-.CodeRay .symbol .content { color:#A60 }
-.CodeRay .symbol .delimiter { color:#630 }
+.CodeRay .symbol { color:#bd93f9 }
+.CodeRay .symbol .content { color:#ffb86c }
+.CodeRay .symbol .delimiter { color:#f8f8f2 }
 
-.CodeRay .tag { color:#070 }
-.CodeRay .tag-special { color:#D70; font-weight:bold }
-.CodeRay .type { color:#339; font-weight:bold }
-.CodeRay .variable  { color:#036 }
+.CodeRay .tag { color:#ff79c6 }
+.CodeRay .tag-special { color:#ff79c6; font-weight:bold }
+.CodeRay .type { color:#8be9fd; font-weight:bold }
+.CodeRay .variable  { color:#f8f8f2 }
 
-.CodeRay .insert { background: #afa; }
-.CodeRay .delete { background: #faa; }
-.CodeRay .change { color: #aaf; background: #007; }
-.CodeRay .head { color: #f8f; background: #505 }
+.CodeRay .insert { background: #50fa7b33; color: #50fa7b; }
+.CodeRay .delete { background: #ff555533; color: #ff5555; }
+.CodeRay .change { color: #8be9fd; background: #44475a; }
+.CodeRay .head { color: #bd93f9; background: #44475a }
 
-.CodeRay .insert .insert { color: #080; font-weight:bold }
-.CodeRay .delete .delete { color: #800; font-weight:bold }
-.CodeRay .change .change { color: #66f; }
-.CodeRay .head .head { color: #f4f; }
+.CodeRay .insert .insert { color: #50fa7b; font-weight:bold }
+.CodeRay .delete .delete { color: #ff5555; font-weight:bold }
+.CodeRay .change .change { color: #8be9fd; }
+.CodeRay .head .head { color: #bd93f9; }

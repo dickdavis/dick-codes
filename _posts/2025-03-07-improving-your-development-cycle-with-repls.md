@@ -8,10 +8,10 @@ Iterate faster by using vim, tmux, and vim-slime to write and debug your code in
 
 <!--more-->
 
-- [Motivation](#motivation)
-- [Optimizing the REPL](#optimizing-the-repl)
-- [Setting up vim-slime](#setting-up-vim-slime)
-- [Putting it all together](#putting-it-all-together)
+{: .toc-container}
+
+* TOC
+{:toc}
 
 ## Motivation
 

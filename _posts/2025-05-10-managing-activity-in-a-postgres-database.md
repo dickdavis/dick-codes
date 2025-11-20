@@ -8,9 +8,10 @@ When applications reach a certain scale, the database quickly becomes a non-nego
 
 <!--more-->
 
-- [See what's running](#see-whats-running)
-- [Identify blocking processes](#identify-blocking-processes)
-- [Stop a process](#stop-a-process)
+{: .toc-container}
+
+* TOC
+{:toc}
 
 ## See what's running
 

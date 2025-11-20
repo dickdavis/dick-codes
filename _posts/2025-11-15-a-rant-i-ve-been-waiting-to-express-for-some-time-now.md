@@ -8,9 +8,18 @@ Sometimes things happen that we just can't let go of unless we address them. *De
 
 <!--more-->
 
+{: .toc-container}
+
+* TOC
+{:toc}
+
+## Beware of strong opinons
+
 If you've been in software development for any length of time, you'll have noticed that there is an abundance of so-called "best practices", strong opinions, frameworks, methodologies, and more. You've probably seen a thousand articles with headlines like "THIS is the One, True Way to do Agile," or "Test-Driven Development Will Change Your Life FOREVER," or "How Pair/Mob Programming Will Make Your Dev Team 100x More Effective."
 
 I sampled a lot of these Kool-Aid flavors early on in my career, but eventually they all started to taste the same: like just some other dude's opinion, man. Don't get me wrong. There is merit to some of these ideas, but I just don't understand the dogmatic zeal of their proponents. I mean, if it works for you, cool, but it always seems to be an all-or-nothing sort of deal where you are expected to acknowledge the superiority of their idea, shave your head, and religiously adhere to the practice.
+
+## My unfortunate encounter
 
 There is a prominent contracting agency in the Ruby world that is full of such ideas, some good and others... yeah. I worked with a couple of their developers on a project once, and while I really enjoyed working with them, their cult-like adherence to their internal style guide made collaboration frustrating. One of the most contentious disagreements we had was over test set-up (TEST SET-UP!!!). 
 
@@ -23,6 +32,8 @@ In our discussions, I'd grant them that sometimes this makes sense, like when us
 I tried reasoning with them to no avail, and it sticks with me just how dogmatically they stuck to their position. It wouldn't have been an issue worth contending over, but it all started when they demanded I refactor my specs to their preferred approach. The whole episode is just absolutely baffling to me in retrospect. I've seen people get excited about test-driven development or pair programming, but advocating an unorthodox, non-mainstream misuse of RSpec and then demanding that other developers adhere to it is next-level cult shit.
 
 It is one thing to advocate for standardization. I support that in general, but I hesitate a bit when we are discussing standardizing a non-standard practice that I've never seen used in any of the Ruby shops or open source projects I've worked on. Writing all of our specs in such a way that any slight change to test setup requires updating every scenario over and over and over again? Nah, hard pass, that's not for me.
+
+## Wrapping up and letting go
 
 I'm fine with people having different opinions and approaches to improving code quality. In fact, that is a sign of a healthy team. You **should** be able to give and receive feedback, and you **should** feel comfortable speaking up when something doesn't look quite right or could be improved. Code reviews **should** be more than just an "LGTM" approval. 
 

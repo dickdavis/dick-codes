@@ -8,11 +8,10 @@ I'm an AI skeptic who still uses LLMs daily for development work. Here's the wor
 
 <!--more-->
 
-- [Introduction](#introduction)
-- [Finding the right models to work with](#finding-the-right-models-to-work-with)
-- [Planning with models](#planning-with-models)
-- [Ensuring higher quality output](#ensuring-higher-quality-output)
-- [Conclusion](#conclusion)
+{: .toc-container}
+
+* TOC
+{:toc}
 
 ## Introduction
 
