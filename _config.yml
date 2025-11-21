@@ -1,16 +1,13 @@
 title: dick.codes
 domain: dick.codes
 url: https://dick.codes
-exclude: ['bin/', 'package.json', 'postcss.config.js', 'tailwind.config.js', 'bun.lock', 'README.md', 'LICENSE.txt']
+exclude: ['bin/', 'README.md', 'LICENSE.txt']
 include: ['_pages']
 baseurl:
 excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
-  - jekyll-postcss
   - jekyll-sitemap
-postcss:
-  cache: false
 kramdown:
   syntax_highlighter: coderay
   syntax_highlighter_opts:

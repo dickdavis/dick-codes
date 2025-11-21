@@ -1,0 +1,210 @@
+/* generic styles for use in pages */
+section.page-content > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+h2.page-content__heading {
+  margin-top: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: rgb(99 102 241);
+}
+
+p.page-content__text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 2;
+}
+
+ul.page-content__list {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+ul.page-content__list > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+ul.page-content__list {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 2;
+}
+
+ul.page-content__list_undecorated {
+  list-style-position: inside;
+}
+
+ul.page-content__list_undecorated > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+ul.page-content__list_undecorated {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 2;
+}
+
+a.page-content__link {
+  color: rgb(99 102 241);
+  text-decoration-line: underline;
+}
+
+a.page-content__link:hover {
+  color: rgb(55 48 163);
+}
+
+blockquote.page-content__quote {
+  border-left-width: 4px;
+  border-color: rgb(79 70 229);
+  background-color: rgb(30 41 59);
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-style: italic;
+  line-height: 2;
+}
+
+small.page-content__ps {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-style: italic;
+  color: rgb(226 232 240);
+}
+
+/* about.html styles */
+section.about-header {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+img.about-header__headshot {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 9999px;
+  border-width: 4px;
+  border-color: rgb(99 102 241);
+  object-fit: cover;
+}
+
+p.about-header__name {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: rgb(99 102 241);
+}
+
+p.about-header__tagline {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-style: italic;
+}
+
+ul.about-header__links-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+
+  ul.about-header__links-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+li.about-header__link-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+div.about-header__link-icon-wrapper {
+  width: 2.5rem;
+  text-align: center;
+}
+
+a.about-header__link {
+  color: rgb(99 102 241);
+  text-decoration-line: underline;
+}
+
+a.about-header__link:hover {
+  color: rgb(55 48 163);
+}
+
+small.about-page__key-fingerprint {
+  display: block;
+  word-break: break-all;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+section.about-page__wishlist-section {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* index.html styles */
+article.article-preview {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+article.article-preview > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+h3.article-preview__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+
+  & a {
+    color: rgb(99 102 241);
+  }
+
+  & a {
+    text-decoration-line: underline;
+  }
+
+  & a:hover {
+    color: rgb(55 48 163);
+  }
+}
+
+time.article-preview__publication-time {
+  color: rgb(100 116 139);
+}
+
+p.article-preview__excerpt {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  line-height: 2;
+}

@@ -46,7 +46,6 @@ GEM
       webrick (~> 1.7)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-postcss (0.5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-sitemap (1.4.0)
@@ -93,7 +92,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4)
   jekyll-feed
-  jekyll-postcss
   jekyll-sitemap
   kramdown-syntax-coderay
   webrick (~> 1.7)

@@ -19,7 +19,7 @@ I was recently implementing a feature to support billing multi-user accounts whe
 
 My initial direction was flawed because I conflated two separate domain entities when planning: groups and accounts. Although similar in that they would represent aggregators of `User` records, they were different in their purpose within the domain model. An `Account` represents a record containing billing information for one or more users which connects to the subscription billing vendor. In contrast, a `Group` represents an organizational unit tying together individual users working together in some capacity to perform tasks within the application.
 
-<div class="mermaid text-slate-900">
+<div class="mermaid">
 mindmap
   root((User))
     Account
