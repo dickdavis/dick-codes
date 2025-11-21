@@ -1,0 +1,463 @@
+table.CodeRay {
+  margin-bottom: 1.5rem;
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+  border-radius: 0.5rem;
+  background-color: rgb(30 41 59);
+  color: rgb(255 255 255);
+}
+
+code {
+  border-radius: 0.375rem;
+  background-color: rgb(30 41 59);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: rgb(226 232 240);
+}
+
+table.CodeRay tbody {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+table.CodeRay tbody tr td.line-numbers {
+}
+
+div.CodeRay {
+}
+
+span.CodeRay {
+  white-space: pre;
+  border: 0px;
+  padding: 2px;
+}
+
+table.CodeRay {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.CodeRay td {
+  padding: 1em 0.5em;
+  vertical-align: top;
+}
+
+.CodeRay .line-numbers,  .CodeRay .no {
+  width: 2rem;
+  background-color: rgb(30 41 59);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: right;
+  color: rgb(100 116 139);
+}
+
+.CodeRay .line-numbers a {
+  color: rgb(148 163 184);
+}
+
+.CodeRay .line-numbers a:hover {
+  color: rgb(71 85 105);
+}
+
+.CodeRay .line-numbers tt {
+  font-weight: bold;
+}
+
+.CodeRay .line-numbers .highlighted {
+  color: red;
+}
+
+.CodeRay .line {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.CodeRay span.line-numbers {
+  padding: 0px 4px;
+}
+
+.CodeRay .code {
+  width: 100%;
+}
+
+ol.CodeRay {
+  font-size: 10pt;
+}
+
+ol.CodeRay li {
+  white-space: pre;
+}
+
+.CodeRay .code pre {
+  overflow: auto;
+}
+
+.CodeRay .debug {
+  color:white ! important;
+  background:blue ! important;
+}
+
+/* Dracula Theme Color Palette:
+   Background: #282a36, Foreground: #f8f8f2
+   Comment: #6272a4, Cyan: #8be9fd, Green: #50fa7b
+   Orange: #ffb86c, Pink: #ff79c6, Purple: #bd93f9
+   Red: #ff5555, Yellow: #f1fa8c */
+.CodeRay .annotation {
+  color:#f1fa8c;
+}
+
+.CodeRay .attribute-name {
+  color:#50fa7b;
+}
+
+.CodeRay .attribute-value {
+  color:#f1fa8c;
+}
+
+.CodeRay .binary {
+  color:#bd93f9;
+  font-weight:bold;
+}
+
+.CodeRay .comment {
+  color:#6272a4;
+  font-style: italic;
+}
+
+.CodeRay .char {
+  color:#f1fa8c;
+}
+
+.CodeRay .char .content {
+  color:#f1fa8c;
+}
+
+.CodeRay .char .delimiter {
+  color:#f1fa8c;
+}
+
+.CodeRay .class {
+  color:#8be9fd;
+  font-weight:bold;
+}
+
+.CodeRay .complex {
+  color:#bd93f9;
+  font-weight:bold;
+}
+
+.CodeRay .constant {
+  color:#bd93f9;
+}
+
+.CodeRay .color {
+  color:#50fa7b;
+}
+
+.CodeRay .class-variable {
+  color:#8be9fd;
+}
+
+.CodeRay .decorator {
+  color:#50fa7b;
+}
+
+.CodeRay .definition {
+  color:#50fa7b;
+  font-weight:bold;
+}
+
+.CodeRay .directive {
+  color:#ff79c6;
+  font-weight:bold;
+}
+
+.CodeRay .delimiter {
+  color:#f8f8f2;
+}
+
+.CodeRay .doc {
+  color:#f1fa8c;
+}
+
+.CodeRay .doctype {
+  color:#ff79c6;
+}
+
+.CodeRay .doc-string {
+  color:#f1fa8c;
+  font-weight:bold;
+}
+
+.CodeRay .escape {
+  color:#ff79c6;
+  font-weight:bold;
+}
+
+.CodeRay .entity {
+  color:#50fa7b;
+  font-weight:bold;
+}
+
+.CodeRay .error {
+  color:#ff5555;
+  background-color:#44475a;
+}
+
+.CodeRay .exception {
+  color:#ff5555;
+  font-weight:bold;
+}
+
+.CodeRay .filename {
+  color:#f1fa8c;
+}
+
+.CodeRay .function {
+  color:#50fa7b;
+  font-weight:bold;
+}
+
+.CodeRay .global-variable {
+  color:#bd93f9;
+  font-weight:bold;
+}
+
+.CodeRay .hex {
+  color:#bd93f9;
+  font-weight:bold;
+}
+
+.CodeRay .integer {
+  color:#bd93f9;
+}
+
+.CodeRay .include {
+  color:#ff79c6;
+  font-weight:bold;
+}
+
+.CodeRay .inline {
+  color:#f8f8f2;
+}
+
+.CodeRay .inline .inline {
+  background: #44475a;
+}
+
+.CodeRay .inline .inline .inline {
+  background: #44475a;
+}
+
+.CodeRay .inline .inline-delimiter {
+  color: #f1fa8c;
+}
+
+.CodeRay .inline-delimiter {
+  color: #f1fa8c;
+}
+
+.CodeRay .important {
+  color:#ff5555;
+}
+
+.CodeRay .interpreted {
+  color:#50fa7b;
+  font-weight:bold;
+}
+
+.CodeRay .instance-variable {
+  color:#bd93f9;
+}
+
+.CodeRay .label {
+  color:#8be9fd;
+  font-weight:bold;
+}
+
+.CodeRay .local-variable {
+  color:#ffb86c;
+}
+
+.CodeRay .octal {
+  color:#bd93f9;
+  font-weight:bold;
+}
+
+.CodeRay .operator {
+  color:#ff79c6;
+}
+
+.CodeRay .predefined-constant {
+  color:#bd93f9;
+  font-weight:bold;
+}
+
+.CodeRay .predefined {
+  color:#8be9fd;
+  font-weight:bold;
+}
+
+.CodeRay .preprocessor {
+  color:#ff79c6;
+}
+
+.CodeRay .pseudo-class {
+  color:#50fa7b;
+  font-weight:bold;
+}
+
+.CodeRay .predefined-type {
+  color:#8be9fd;
+  font-weight:bold;
+}
+
+.CodeRay .reserved, .keyword {
+  color:#ff79c6;
+  font-weight:bold;
+}
+
+.CodeRay .key {
+  color: #ff79c6;
+}
+
+.CodeRay .key .delimiter {
+  color: #f8f8f2;
+}
+
+.CodeRay .key .char {
+  color: #f1fa8c;
+}
+
+.CodeRay .value {
+  color: #f1fa8c;
+}
+
+.CodeRay .regexp {
+  background-color:#44475a;
+}
+
+.CodeRay .regexp .content {
+  color:#f1fa8c;
+}
+
+.CodeRay .regexp .delimiter {
+  color:#ff79c6;
+}
+
+.CodeRay .regexp .modifier {
+  color:#ff79c6;
+}
+
+.CodeRay .regexp .function {
+  color:#50fa7b;
+  font-weight: bold;
+}
+
+.CodeRay .string {
+  color: #f1fa8c;
+}
+
+.CodeRay .string .string {
+}
+
+.CodeRay .string .string .string {
+  background-color:#44475a;
+}
+
+.CodeRay .string .content {
+  color: #f1fa8c;
+}
+
+.CodeRay .string .char {
+  color: #f1fa8c;
+}
+
+.CodeRay .string .delimiter {
+  color: #f1fa8c;
+}
+
+.CodeRay .shell {
+  color:#f1fa8c;
+}
+
+.CodeRay .shell .content {
+}
+
+.CodeRay .shell .delimiter {
+  color:#f1fa8c;
+}
+
+.CodeRay .symbol {
+  color:#bd93f9;
+}
+
+.CodeRay .symbol .content {
+  color:#ffb86c;
+}
+
+.CodeRay .symbol .delimiter {
+  color:#f8f8f2;
+}
+
+.CodeRay .tag {
+  color:#ff79c6;
+}
+
+.CodeRay .tag-special {
+  color:#ff79c6;
+  font-weight:bold;
+}
+
+.CodeRay .type {
+  color:#8be9fd;
+  font-weight:bold;
+}
+
+.CodeRay .variable {
+  color:#f8f8f2;
+}
+
+.CodeRay .insert {
+  background: #50fa7b33;
+  color: #50fa7b;
+}
+
+.CodeRay .delete {
+  background: #ff555533;
+  color: #ff5555;
+}
+
+.CodeRay .change {
+  color: #8be9fd;
+  background: #44475a;
+}
+
+.CodeRay .head {
+  color: #bd93f9;
+  background: #44475a;
+}
+
+.CodeRay .insert .insert {
+  color: #50fa7b;
+  font-weight:bold;
+}
+
+.CodeRay .delete .delete {
+  color: #ff5555;
+  font-weight:bold;
+}
+
+.CodeRay .change .change {
+  color: #8be9fd;
+}
+
+.CodeRay .head .head {
+  color: #bd93f9;
+}
