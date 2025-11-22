@@ -86,8 +86,6 @@ section.about-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   text-align: left;
 }
 
@@ -120,8 +118,9 @@ ul.about-header__links-container {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
@@ -129,8 +128,6 @@ ul.about-header__links-container {
 @media (min-width: 640px) {
 
   ul.about-header__links-container {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 1rem;
   }
 }
@@ -142,7 +139,7 @@ li.about-header__link-item {
 }
 
 div.about-header__link-icon-wrapper {
-  width: 2.5rem;
+  width: 2rem;
   text-align: center;
 }
 
