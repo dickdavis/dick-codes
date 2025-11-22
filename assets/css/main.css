@@ -5,5 +5,6 @@
 {% include_relative layout.css %}
 {% include_relative pages.css %}
 {% include_relative posts.css %}
+{% include_relative tags.css %}
 {% include_relative coderay.css %}
 {% include_relative mermaid.css %}

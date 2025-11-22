@@ -1,13 +1,16 @@
 ---
 layout: default
-title: "Posts"
-permalink: /
 ---
+
+{%- assign tag_posts = site.tags[page.tag] -%}
 
 {%- include tag-cloud.html -%}
 
-{%- if site.posts.size > 0 -%}
-  {%- for post in site.posts -%}
+<p class="tag-filter-notice">Showing posts tagged with <strong>{{ page.tag }}</strong></p>
+<p class="tag-view-all"><a href="{{ '/' | relative_url }}">View all posts</a></p>
+
+{%- if tag_posts.size > 0 -%}
+  {%- for post in tag_posts -%}
     <article class="article-preview">
       <h3 class="article-preview__title">
         <a href="{{ post.url }}">{{ post.title }}</a>
