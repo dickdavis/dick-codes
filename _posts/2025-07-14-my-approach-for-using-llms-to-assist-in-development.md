@@ -2,6 +2,7 @@
 layout: post
 title:  "My approach for using LLMs to assist in development"
 date:   2025-07-14
+tags:   [ai, tools, workflow]
 ---
 
 I'm an AI skeptic who still uses LLMs daily for development work. Here's the workflow I've developed to get real value from these tools without falling into the trap of letting them do my thinking for me.

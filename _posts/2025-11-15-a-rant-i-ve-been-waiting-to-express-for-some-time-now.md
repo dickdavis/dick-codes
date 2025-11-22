@@ -2,9 +2,10 @@
 layout: post
 title:  "A rant I've been waiting to express for some time now"
 date:   2025-11-15
+tags:   [opinion]
 ---
 
-Sometimes things happen that we just can't let go of unless we address them. *Deep Inhale*
+Sometimes things happen that we just can't let go of unless we address them. *Deep Inhale*.
 
 <!--more-->
 

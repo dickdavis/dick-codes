@@ -2,6 +2,7 @@
 layout: post
 title:  "Improving Your Development Cycle with REPLs"
 date:   2025-03-07 01:00:00 -0500
+tags:   [ruby, tools, workflow]
 ---
 
 Iterate faster by using vim, tmux, and vim-slime to write and debug your code in a Read, Eval, Print Loop (REPL).

@@ -6,6 +6,13 @@ layout: default
     <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %e, %Y" }}</time>
   </span>
   <h1 class="post__title">{{ page.title }}</h1>
+  {%- if page.tags.size > 0 -%}
+    <div class="post__tags">
+      {%- for tag in page.tags -%}
+        <a href="{{ '/tags/' | append: tag | relative_url }}" class="tag-badge">{{ tag }}</a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
   <section id="content" class="post__content">
     {{ content }}
   </section>

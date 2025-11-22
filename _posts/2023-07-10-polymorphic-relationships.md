@@ -2,6 +2,7 @@
 layout: post
 title:  "Polymorphic Relationships in ActiveRecord"
 date:   2023-07-10 10:00:00 -0500
+tags:   [rails, ruby]
 ---
 
 Discover how polymorphic relationships in ActiveRecord can elegantly separate billing accounts from collaborative groups - a practical guide based on real-world implementation.

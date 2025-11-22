@@ -1,0 +1,106 @@
+/* Tag badge component - used in posts and article previews */
+a.tag-badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: rgb(30 41 59);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(99 102 241);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a.tag-badge:hover {
+  background-color: rgb(79 70 229);
+  color: rgb(241 245 249);
+  transform: translateY(-1px);
+}
+
+/* Tag cloud component */
+div.tag-cloud {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(30 41 59);
+  border-width: 1px;
+  border-color: rgb(79 70 229);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+  column-gap: 0.75rem;
+  align-items: baseline;
+  justify-content: center;
+}
+
+a.tag-cloud__tag {
+  color: rgb(99 102 241);
+  text-decoration: none;
+  transition: all 0.2s;
+  line-height: 1.2;
+}
+
+a.tag-cloud__tag:hover {
+  color: rgb(55 48 163);
+  transform: scale(1.1);
+}
+
+/* Tag filter notice on tag pages */
+p.tag-filter-notice {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(100 116 139);
+}
+
+p.tag-filter-notice strong {
+  display: inline-block;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: rgb(30 41 59);
+  font-size: 0.875rem;
+  color: rgb(99 102 241);
+  font-weight: normal;
+}
+
+/* View all posts link on tag pages */
+p.tag-view-all {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+p.tag-view-all a {
+  color: rgb(99 102 241);
+  text-decoration: underline;
+}
+
+p.tag-view-all a:hover {
+  color: rgb(55 48 163);
+}
+
+/* Post tags container */
+div.post__tags {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+/* Article preview tags container */
+div.article-preview__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+/* Add extra spacing above excerpt when it follows tags */
+div.article-preview__tags + p.article-preview__excerpt {
+  margin-top: 1rem !important;
+}
