@@ -2,6 +2,7 @@
 layout: post
 title:  "Setting up logical replication with Postgres"
 date:   2025-06-06
+tags:   [postgres]
 ---
 
 Getting data out of your Postgres database and into a different data store, like BigQuery or Redshift, is easy with logical replication. This guide shows you how.

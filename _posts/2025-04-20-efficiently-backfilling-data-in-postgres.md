@@ -2,7 +2,9 @@
 layout: post
 title:  "Efficiently backfilling data in Postgres"
 date:   2025-04-20
+tags:   [postgres, performance]
 ---
+
 While a rake task or background job works fine for most data imports, they become prohibitively slow when dealing with millions of rows. PostgreSQL's `\copy` command can handle these large datasets orders of magnitude faster than application-level approaches.
 
 <!--more-->

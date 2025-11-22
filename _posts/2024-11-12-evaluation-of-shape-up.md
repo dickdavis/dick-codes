@@ -2,6 +2,7 @@
 layout: post
 title:  "Evaluation of Shape Up"
 date:   2024-11-12 01:00:00 -0500
+tags:   [product]
 ---
 
 I read the book *Shape Up* by Ryan Singer, taking extensive notes about the methodology and assessing its viability for adoption by product teams.

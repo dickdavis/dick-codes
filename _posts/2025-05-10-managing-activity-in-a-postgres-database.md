@@ -2,6 +2,7 @@
 layout: post
 title:  "Managing activity in a Postgres database"
 date:   2025-05-10
+tags:   [postgres]
 ---
 
 When applications reach a certain scale, the database quickly becomes a non-negotiable consideration. Strange issues start to appear when storing millions of records and processing thousands of transactions per second. This post offers a few quick pointers for addressing issues as they arise.
