@@ -1,6 +1,7 @@
 ---
 ---
 
+{% include_relative variables.css %}
 {% include_relative reset.css %}
 {% include_relative layout.css %}
 {% include_relative pages.css %}
