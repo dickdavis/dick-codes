@@ -1,60 +1,60 @@
 body {
   margin-left: auto;
   margin-right: auto;
-  max-width: 48rem;
-  background-color: rgb(15 23 42);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: rgb(241 245 249);
+  max-width: var(--max-width-prose);
+  background-color: var(--color-bg-primary);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  color: var(--color-text-primary);
 }
 
 nav.navigation {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-4);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 1rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  padding: var(--space-4);
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
 }
 
 div.navigation__section_right {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 a.navigation__page-link {
-  color: rgb(99 102 241);
+  color: var(--color-accent-primary);
   text-decoration-line: underline;
 }
 
 a.navigation__page-link:hover {
-  color: rgb(55 48 163);
+  color: var(--color-accent-primary-hover);
 }
 
 a.navigation__rss-link {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: rgb(249 115 22);
+  font-size: var(--text-xl);
+  line-height: var(--leading-normal);
+  color: var(--color-accent-orange);
 }
 
 a.navigation__back-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: rgb(99 102 241);
+  gap: var(--space-2);
+  color: var(--color-accent-primary);
 }
 
 a.navigation__back-link:hover {
-  color: rgb(55 48 163);
+  color: var(--color-accent-primary-hover);
 }
 
 a.navigation__back-link {
 
   & i {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: var(--text-sm);
+    line-height: var(--leading-tight);
   }
 
   & span {
@@ -63,17 +63,17 @@ a.navigation__back-link {
 }
 
 span.blog-title {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-12);
   display: block;
   text-align: center;
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 700;
+  font-size: var(--text-6xl);
+  line-height: var(--leading-none);
+  font-weight: var(--font-bold);
 }
 
 div.blog-content-wrapper {
   display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-6);
 }
